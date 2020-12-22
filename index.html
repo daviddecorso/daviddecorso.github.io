@@ -4,22 +4,34 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
+    <meta name="Description" content="Personal website of David DeCorso" />
     <title>Me</title>
   </head>
   <body>
+    <canvas id="grid"></canvas>
+    <canvas id="top-canvas"></canvas>
     <div class="name-div">
-      <p class="name-text">DAVID DECORSO</p>
+      <h1 class="name-text" id="name">DAVID<br />DECORSO</h1>
+
+      <div class="abt-div">
+        <b>
+          <p class="abt-txt">
+            &nbsp;I'm a computer science student at the
+            <a id="abt-school">University of Central Florida</a>.<br />
+            <a id="abt-projects" href="https://github.com/daviddecorso"
+              >Check out the projects I'm working on</a
+            >, or
+            <a id="abt-contact" href="mailto:davidadecorso@knigts.ucf.edu"
+              >get in touch</a
+            >.
+          </p>
+        </b>
+      </div>
     </div>
-    <div class="sideways-div">
-      <p class="sideways-text">
-        CS student at the University of Central Florida
-      </p>
+    <div class="hover-pic">
+      <img id="ucf-img" src="/ucf_knight.jpg" />
     </div>
 
-    <div class="links">
-      <a href="/Resume.pdf">resume</a>
-      <a href="https://github.com/daviddecorso">projects</a>
-      <a href="mailto:davidadecorso@knigts.ucf.edu">contact</a>
-    </div>
+    <script src="/drawbg.js"></script>
   </body>
 </html>
