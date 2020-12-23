@@ -255,6 +255,7 @@ fillBg();
 
 githubPic.onload = function () {
   drawShapes(canvasHeight, canvasWidth, 0, 0);
+  console.log("Do we ever load this png?");
 };
 
 nameWriting.onload = function () {
