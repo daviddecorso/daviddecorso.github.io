@@ -38,7 +38,7 @@ let nameWriting = new Image();
 nameWriting.src = "/hi_my_name_is_yellow.png";
 
 let githubPic = new Image();
-githubPic.src = "/github_snip.png";
+githubPic.src = "/github_snip_img.png";
 
 let notifPic = new Image();
 notifPic.src = "/notif_dot.png";
