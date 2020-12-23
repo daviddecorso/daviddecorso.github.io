@@ -19,8 +19,6 @@ var ucfImg = document.getElementById("ucf-img");
 
 var projectsText = document.getElementById("abt-projects");
 
-// var resumeText = document.getElementById("abt-resume");
-
 var contactText = document.getElementById("abt-contact");
 
 var nameText = document.getElementById("name");
@@ -231,8 +229,6 @@ function gridScroll(e) {
       mousePosY > 0 &&
       mousePosY <= windowHeight
     ) {
-      // console.log("DELTA X: " + deltaX + " POS X: " + mousePosX);
-
       gridChangeX += deltaX / 4;
       gridChangeY += deltaY / 4;
 
@@ -266,5 +262,3 @@ nameWriting.onload = function () {
     300
   );
 };
-
-// findLen();

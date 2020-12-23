@@ -23,7 +23,6 @@ canvas {
 
 #ucf-img {
   position: absolute;
-  /*margin-left: 60px;*/
   display: none;
   width: auto;
   height: 210;
@@ -83,39 +82,48 @@ body {
   cursor: default;
 }
 
-.sideways-div {
-  font-size: 28px;
-  font-family: "Courier New", Courier, monospace;
-  position: absolute;
-  left: 0;
-  bottom: 58px;
-  color: #4d5eb3;
+/*
+Mobile styles:
+*/
+
+.abt-div-mobile {
+  display: none;
 }
 
-.sideways-text {
-  writing-mode: vertical-lr;
-  transform: rotate(180deg);
-  text-orientation: sideways;
-  text-align: right;
-  text-orientation: sideways;
-  margin: 1rem;
-}
+@media screen and (max-width: 1190px) {
+  .name-div {
+    font-size: 34px;
+    position: absolute;
+    margin: 0;
+    top: 50vh;
+  }
 
-.links {
-  position: absolute;
-  bottom: 0;
-  right: 20%;
-  font-size: 40px;
-  font-family: "Courier New", Courier, monospace;
-  display: flex;
-  flex-direction: row;
-}
+  #tagline-mobile {
+    margin-block-start: 0.4em;
+  }
 
-.links a {
-  color: #4d5eb3;
+  .name-div p {
+    font-size: 21px;
+    display: block;
+    margin-block-start: 3em;
+    margin-block-end: 3em;
+  }
 
-  text-decoration: none;
-  margin-left: 40px;
-  margin-right: 40px;
-  margin-bottom: 5px;
+  .abt-div {
+    display: none;
+  }
+
+  .abt-div-mobile {
+    display: block;
+    margin-left: 0.25em;
+    text-align: center;
+  }
+
+  .link-txt-mobile {
+    text-align: center;
+  }
+
+  .link-mobile {
+    font-size: 32px;
+  }
 }
