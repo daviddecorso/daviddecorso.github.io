@@ -35,7 +35,7 @@ let loopArrow = new Image();
 loopArrow.src = "/arrow_double_loop.svg";
 
 let nameWriting = new Image();
-nameWriting.src = "/hi_my_name_is_yellow.png";
+nameWriting.src = "/mynameis.png";
 
 let githubPic = new Image();
 githubPic.src = "/github_snip_img.png";
@@ -255,7 +255,6 @@ fillBg();
 
 githubPic.onload = function () {
   drawShapes(canvasHeight, canvasWidth, 0, 0);
-  console.log("Do we ever load this png?");
 };
 
 nameWriting.onload = function () {
