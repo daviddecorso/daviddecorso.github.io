@@ -253,7 +253,7 @@ setCanvasSize();
 
 fillBg();
 
-img.onload = function () {
+githubPic.onload = function () {
   drawShapes(canvasHeight, canvasWidth, 0, 0);
 };
 
