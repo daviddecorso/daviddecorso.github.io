@@ -8,6 +8,8 @@ const color_shape = "#9fe5fc";
 
 const gridWeight = 0.15;
 
+let mobileView = false;
+
 var canvas = document.getElementById("grid");
 var gridCtx = canvas.getContext("2d");
 
@@ -64,6 +66,12 @@ window.onresize = function (e) {
     deltaY
   );
   drawNameWriting();
+
+  if (canvasHeight <= 1190) {
+    mobileView = true;
+  } else {
+    mobileView = false;
+  }
 };
 
 var gridChangeX = 0;
@@ -163,7 +171,11 @@ function drawNameWriting() {
   );
 }
 
-document.addEventListener("mousemove", setMousePos, false);
+function mouseMoveListener() {
+  if (!mobileView) {
+    document.addEventListener("mousemove", setMousePos, false);
+  }
+}
 
 function setImgPos(leftPos, topPos) {
   ucfImg.style.left = leftPos;
@@ -251,6 +263,11 @@ fillBg();
 
 githubPic.onload = function () {
   drawShapes(canvasHeight, canvasWidth, 0, 0);
+  if (canvasWidth <= 1190) {
+    mobileView = true;
+  } else {
+    mouseMoveListener();
+  }
 };
 
 nameWriting.onload = function () {

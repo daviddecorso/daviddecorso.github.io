@@ -45,6 +45,7 @@ body {
   left: 48%;
   transform: translate(-50%, -50%);
   text-shadow: 0.03em 0.03em 0 #4d5eb3;
+  margin-right: -6em;
 }
 
 .name-div p {
@@ -99,7 +100,7 @@ Mobile styles:
   }
 
   #tagline-mobile {
-    margin-block-start: 0.4em;
+    margin-block-start: 1em;
   }
 
   .name-div p {
@@ -107,6 +108,7 @@ Mobile styles:
     display: block;
     margin-block-start: 3em;
     margin-block-end: 3em;
+    color: #324286;
   }
 
   .abt-div {
@@ -117,6 +119,7 @@ Mobile styles:
     display: block;
     margin-left: 0.25em;
     text-align: center;
+    color: #324286;
   }
 
   .link-txt-mobile {
@@ -125,5 +128,6 @@ Mobile styles:
 
   .link-mobile {
     font-size: 32px;
+    text-decoration: none;
   }
 }
